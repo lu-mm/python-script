@@ -13,7 +13,7 @@ class main():
     aliyun_access_secret=''
     aliyun_region=''
     parser = optparse.OptionParser()
-    parser.add_option('-i','--instanceid',dest='instanceid',default=instanceid ,help="RDS instance id,The default is rm-2ze76t71kh0jv9689")
+    parser.add_option('-i','--instanceid',dest='instanceid',default=instanceid ,help="RDS instance id")
     parser.add_option('--date',dest='date', default=None, help="slowlog endtime.The default is now time.example：2019-09-25")
     parser.add_option('--day',dest='day',default=1, help="How many days of slow log,The default is one day")
     parser.add_option('--mail', dest='mail', default=send_mail, help="send mail address，delimiter \",\",Don't send mail input \"None\" ")

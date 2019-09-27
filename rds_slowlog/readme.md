@@ -23,12 +23,11 @@
 ```shell
 #帮助，都有默认值，可以不传
 main.py -h
--i INSTANCEID, --instanceid=INSTANCEID
-                        RDS instance id,The default is rm-2ze76t71kh0jv9689
-  --date=DATE           slowlog endtime.The default is now
+-i INSTANCEID, --instanceid=INSTANCEID  RDS instance id
+--date=DATE           slowlog endtime.The default is now
                         time.example：2019-09-25
-  --day=DAY             How many days of slow log,The default is one day
-  --mail=MAIL           send mail address，delimiter ",",Don't send mail
+--day=DAY             How many days of slow log,The default is one day
+--mail=MAIL           send mail address，delimiter ",",Don't send mail
                         input "None"
 
 ```
