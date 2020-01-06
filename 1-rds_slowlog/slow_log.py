@@ -7,6 +7,7 @@ aliiyun RDS slow API
 import datetime
 import json
 import csv
+import os
 import sys
 import MyMail
 
@@ -122,6 +123,8 @@ class Connection(object):
 
         if slow_logs:
             #write slow log to csvfile
+            if not os.path.exists('slowfile'):
+                os.makedirs('slowfile')
             attachment_file='slowfile/'+ 'slowlog_'+ Endtime +'.csv'
             csvfile = open(attachment_file, 'wb')  # 打开方式还可以使用file对象
             writer = csv.writer(csvfile)
